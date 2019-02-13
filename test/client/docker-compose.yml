@@ -1,0 +1,18 @@
+version: '3'
+services:
+  backup_mysql:
+    image: biolinh/backup_mysql_databases:1.0
+    container_name: backup_mysql
+    environment:
+    - MY_USER=myuser
+    - MY_PASS=myhost
+    - MY_HOST=ip-of-server
+    - MY_BACKUP_DIRECTORY=backup_mysql
+    - MY_BACKUP_DB=mydata
+    - MY_STORED_DAY=1
+    volumes:
+    - ./backup_mysql:/backup_mysql
+networks:
+  default:
+    external:
+      name: mysql-server

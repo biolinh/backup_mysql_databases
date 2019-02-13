@@ -1,0 +1,23 @@
+version: '3.5'
+
+services:
+  mysql-db:
+    image: mysql:5.7
+    container_name: mysql-server
+    privileged: true
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: myrootpassword
+      MYSQL_DATABASE: mydata
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+      - ./backup:/backup
+    networks:
+      - mysql-server  
+networks:
+  mysql-server:
+    name:  mysql-server
