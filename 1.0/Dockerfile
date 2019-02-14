@@ -4,7 +4,7 @@ MAINTAINER linh@jmango360.com
 ARG MY_USER="root"
 ARG MY_PASS
 ARG MY_HOST="localhost"
-ARG MY_BACKUP_DIRECTORY="backup"
+ARG MY_BACKUP_DIRECTORY="/backup"
 ARG MY_BACKUP_DB
 
 

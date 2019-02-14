@@ -35,15 +35,15 @@ The variable specifies the user to connect the Mysql server. The đefault value 
 The variable is mandatory and specifies user's password connecting to Mysql server.
 
 #### **MY_HOST**
-The variable specifies the host of mysql server. The default value is localhost.
-Noted: if the host isn't localhost value, it's mysql user must be allowed connect from outsite. myuser@% will allow access from anywhere.
+The variable specifies the host of Mysql server. The default value is localhost.
+Noted: if the host isn't localhost value, it's Mysql user must be allowed connect from outside. myuser@% will allow access from anywhere.
 
 #### **MY_BACKUP_DIRECTORY**
-The variable is optional and specifies the location to store the backup files.
+The variable is optional and specifies the location to store the backup files. The default value is /backup.
 
 #### **MY_BACKUP_DB**
 The variable is mandatory and specifies which database will be backuped.
 
 #### **MY_STORED_DAY**
-The variable is optional and specifies the day of backuped file which will be kept before removed. This feature doesn't be available in version 1.0
+The variable is optional and specifies the day of back up file which will be kept before removed. This feature doesn't be available in version 1.0
 The default value is 7 days.
