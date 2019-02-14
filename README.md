@@ -8,7 +8,7 @@ This project build a image helping to run a script to backup Mysql database.
 
 ### ... via docker stack deploy or docker-compose
 Example docker-compose.yml for mysql:
-`
+```
 version: '3'
 services:
   backup_mysql:
@@ -23,7 +23,7 @@ services:
     - MY_STORED_DAY=1
     volumes:
     - ./backup_mysql:/backup_mysql
-`
+```
 run `docker-compose up ` to backup database.
 
 ## Environment Variables
